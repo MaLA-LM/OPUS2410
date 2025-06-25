@@ -33,6 +33,8 @@ def get_lang_preds(source_text, target_text):
 
 
 def save_jsonl(dataset, path, stats=None):
+    if len(dataset) == 0:
+        return
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         for ex in dataset:
@@ -48,7 +50,12 @@ def process_file(file_path, source_dir, output_dir, num_proc=8, conf_threshold=0
         pre_path = os.path.join(output_dir, "pre_filter", rel_path + ".pre_filter.jsonl")
         post_path = os.path.join(output_dir, "filtered", rel_path + ".filtered.jsonl")
 
-        ds = load_dataset("json", data_files=file_path)
+        ds = load_dataset("json", data_files=file_path, split="train")
+
+        required_keys = {"source_text", "target_text", "source_lang", "target_lang"}
+        if not required_keys.issubset(ds.column_names):
+            raise ValueError(f"Missing required fields: {required_keys - set(ds.column_names)}")
+        
         ds = ds.map(lambda x: get_lang_preds(x["source_text"], x["target_text"]), num_proc=num_proc)
         save_jsonl(ds, pre_path, stats=pre_stats)
 
