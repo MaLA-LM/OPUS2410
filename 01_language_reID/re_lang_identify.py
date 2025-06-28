@@ -52,6 +52,18 @@ def save_jsonl(dataset, path, stats=None):
                 stats[lang_pair] = stats.get(lang_pair, 0) + 1
 
 
+def count_lines_in_file(file_path):
+    if not os.path.exists(file_path):
+        return 0
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            count = sum(1 for line in f if line.strip())
+        return count
+    except Exception as e:
+        logging.error(f"[Error] Failed to count lines in {file_path}: {e}")
+        return 0
+
+
 def process_file(file_path, pre_path, post_path, num_proc=8, conf_threshold=0.0, pre_stats=None, post_stats=None):
     try:
         ds = load_dataset("json", data_files=file_path, split="train")
@@ -113,23 +125,27 @@ if __name__ == "__main__":
         pre_path = os.path.join(args.output_dir, "pre_filter", rel_path + ".pre_filter.jsonl")
         post_path = os.path.join(args.output_dir, "filtered", rel_path + ".filtered.jsonl")        
 
+        pre_stats = {}
+        post_stats = {}
+        
         if os.path.exists(pre_path):
-            logging.info(f"[Skip] (already exists): {pre_path}")
-            continue
+            logging.info(f"[Skip] File already processed, loading existing stats: {pre_path}")
+            lang_pair = rel_path.split('/')[0]
+            pre_stats[lang_pair] =count_lines_in_file(pre_path)
+            post_stats[lang_pair] = count_lines_in_file(post_path)
 
-        try:
-            pre_stats = {}
-            post_stats = {}
-            process_file(file_path, pre_path, post_path, args.num_proc, args.conf_threshold,
-                         pre_stats=pre_stats, post_stats=post_stats)
-            
-            for k, v in pre_stats.items():
-                pre_stats_all[k] = pre_stats_all.get(k, 0) + v
-            for k, v in post_stats.items():
-                post_stats_all[k] = post_stats_all.get(k, 0) + v
+        else:
+            try:
+                process_file(file_path, pre_path, post_path, args.num_proc, args.conf_threshold,
+                             pre_stats=pre_stats, post_stats=post_stats)
+            except Exception as e:
+                logging.error(f"[Error] Failed during processing: {file_path}\n{e}")
+                continue
 
-        except Exception as e:
-            logging.error(f"[Error] Failed during processing: {file_path}\n{e}")
+        for k, v in pre_stats.items():
+            pre_stats_all[k] = pre_stats_all.get(k, 0) + v
+        for k, v in post_stats.items():
+            post_stats_all[k] = post_stats_all.get(k, 0) + v
 
     stats_path = os.path.join(args.output_dir, "langpair_stats.tsv")
     append_mode = os.path.exists(stats_path)

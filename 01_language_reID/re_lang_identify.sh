@@ -1,13 +1,13 @@
 #!/bin/bash
 #SBATCH --job-name=mala-opus-reLID-glotlid
-#SBATCH --output=./logs/%x_%j.out
-#SBATCH --error=./logs/%x_%j.err
+#SBATCH --output=../logs/%x_%j.out
+#SBATCH --error=../logs/%x_%j.err
 #SBATCH --partition=small
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
 #SBATCH --time=3-00:00:00
-#SBATCH --mem=64G
+#SBATCH --mem=32G
 #SBATCH --account=project_462000675
 #SBATCH --array=0-31
 
@@ -23,7 +23,7 @@ OUTPUT_DIR="/scratch/project_462000941/members/zihao/OPUS2410/mala-opus-dedup-24
 NUM_PROC=16
 MODEL_PATH="/scratch/project_462000941/cache/huggingface/hub/models--cis-lmu--glotlid/snapshots/74cb50b709c9eefe0f790030c6c95c461b4e3b77/model.bin"
 CONF_THRESHOLD=0.0
-FILELIST="./filelists/filelist_${SLURM_ARRAY_TASK_ID}.txt"
+FILELIST="../filelists/filelist_${SLURM_ARRAY_TASK_ID}.txt"
 
 python ./re_lang_identify.py \
   --source_dir "$SOURCE_DIR" \
