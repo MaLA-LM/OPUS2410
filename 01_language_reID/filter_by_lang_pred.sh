@@ -17,10 +17,10 @@ module use /appl/local/csc/modulefiles/
 module load pytorch/2.5
 source /flash/project_462000941/venv/opus2410_env/bin/activate
 
-SOURCE_DIR="/scratch/project_462000941/members/zihao/OPUS2410/mala-opus-dedup-2410-LID"
-OUTPUT_DIR="/scratch/project_462000941/members/zihao/OPUS2410/mala-opus-dedup-2410-filtered"
+SOURCE_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-ReLID"
+OUTPUT_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-filtered"
 NUM_PROC=64
-CONF_THRESHOLD=0.0
+CONF_THRESHOLD=0.9
 
 python ./filter_by_lang_pred.py \
   --source_dir "$SOURCE_DIR" \
