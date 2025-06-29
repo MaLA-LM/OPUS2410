@@ -1,13 +1,12 @@
 import os
-import json
+import orjson
 import argparse
 from glob import glob
 from datasets import load_dataset
 import fasttext
-from tqdm import tqdm
-import pandas as pd
 import sys
 import logging
+import gzip
 
 
 logging.basicConfig(
@@ -16,18 +15,12 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(sys.stdout)]
 )
 
-def save_stats_table(pre_stats_all, post_stats_all, stats_path, append=False):
-    all_lang_pairs = set(pre_stats_all) | set(post_stats_all)
-    rows = []
-    for lp in sorted(all_lang_pairs):
-        pre = pre_stats_all.get(lp, 0)
-        post = post_stats_all.get(lp, 0)
-        rate = post / pre if pre > 0 else 0.0
-        rows.append({"lang_pair": lp, "pre_count": pre, "post_count": post, "retention_rate": f"{rate:.2%}"})
-    df = pd.DataFrame(rows)
-    df.to_csv(stats_path, sep="\t", index=False, mode="a" if append else "w", header=not append)
-    logging.info(f"[Saved] Language pair stats saved to {stats_path}")
 
+def count_lines(file_path):
+    open_fn = gzip.open if file_path.endswith('.gz') else open
+    with open_fn(file_path, 'rt', encoding='utf-8') as f:
+        return sum(1 for _ in f)
+    
 
 def get_lang_preds(source_text, target_text):
     source_pred = lid_model.predict(source_text, 1)
@@ -40,54 +33,31 @@ def get_lang_preds(source_text, target_text):
     }
 
 
-def save_jsonl(dataset, path, stats=None):
+def save_jsonl(dataset, path):
     if len(dataset) == 0:
         return
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        for ex in dataset:
-            f.write(json.dumps(ex, ensure_ascii=False) + "\n")
-            if stats is not None:
-                lang_pair = f"{ex['source_lang']}-{ex['target_lang']}"
-                stats[lang_pair] = stats.get(lang_pair, 0) + 1
+    with open(path, "wb") as f:
+        f.writelines(
+            orjson.dumps(ex, option=orjson.OPT_NON_STR_KEYS) + b"\n"
+            for ex in dataset
+        )
+    logging.info(f"√ Saved to {path}")
 
 
-def count_lines_in_file(file_path):
-    if not os.path.exists(file_path):
-        return 0
+def process_file(input_path, output_path, num_proc):
     try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            count = sum(1 for line in f if line.strip())
-        return count
-    except Exception as e:
-        logging.error(f"[Error] Failed to count lines in {file_path}: {e}")
-        return 0
-
-
-def process_file(file_path, pre_path, post_path, num_proc=8, conf_threshold=0.0, pre_stats=None, post_stats=None):
-    try:
-        ds = load_dataset("json", data_files=file_path, split="train")
+        ds = load_dataset("json", data_files=input_path, split="train")
 
         required_keys = {"source_text", "target_text", "source_lang", "target_lang"}
         if not required_keys.issubset(ds.column_names):
             raise ValueError(f"Missing required fields: {required_keys - set(ds.column_names)}")
         
         ds = ds.map(lambda x: get_lang_preds(x["source_text"], x["target_text"]), num_proc=num_proc)
-        save_jsonl(ds, pre_path, stats=pre_stats)
-
-        def lang_match(x):
-            return (
-                x["source_lang"] == x["source_predlang_id"] and
-                x["target_lang"] == x["target_predlang_id"] and
-                x["source_predlang_conf"] >= conf_threshold and
-                x["target_predlang_conf"] >= conf_threshold
-            )
-
-        filtered_ds = ds.filter(lang_match, num_proc=num_proc)
-        save_jsonl(filtered_ds, post_path, stats=post_stats)
+        save_jsonl(ds, output_path)
 
     except Exception as e:
-        logging.error(f"[Error] Failed to process: {file_path}\n{type(e).__name__}: {e}")
+        logging.error(f"[Error] Failed to process: {input_path}\n{type(e).__name__}: {e}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -95,7 +65,6 @@ if __name__ == "__main__":
     parser.add_argument("--output_dir", required=True, help="Directory to save output .jsonl files")
     parser.add_argument("--num_proc", type=int, default=8, help="Number of parallel processes")
     parser.add_argument("--model_path", default="model.bin", help="Path to fastText language ID model")
-    parser.add_argument("--conf_threshold", type=float, default=0.0, help="Confidence threshold for filtering")
     parser.add_argument("--filelist", type=str, help="Optional: Path to file containing list of files to process")
     args = parser.parse_args()
 
@@ -104,13 +73,10 @@ if __name__ == "__main__":
     logging.info(f"  Output Directory: {args.output_dir}")
     logging.info(f"  Number of Processes: {args.num_proc}")
     logging.info(f"  Model Path: {args.model_path}")
-    logging.info(f"  Confidence Threshold: {args.conf_threshold}")
     logging.info(f"  Filelist: {args.filelist}")
 
     os.makedirs(args.output_dir, exist_ok=True)
     lid_model = fasttext.load_model(args.model_path)
-    pre_stats_all = {}
-    post_stats_all = {}
 
     if args.filelist:
         with open(args.filelist, encoding="utf-8") as f:
@@ -118,35 +84,30 @@ if __name__ == "__main__":
     else:
         all_files = sorted(glob(f"{args.source_dir}/**/*.jsonl.gz", recursive=True))
 
-    for idx, file_path in enumerate(tqdm(all_files), 1):
-        logging.info(f"[{idx}/{len(all_files)}] Processing file: {os.path.basename(file_path)}")
+    for idx, input_path in enumerate(all_files, 1):
+        logging.info(f"[{idx}/{len(all_files)}] Processing file: {os.path.basename(input_path)}")
 
-        rel_path = os.path.relpath(file_path, args.source_dir).replace(".jsonl.gz", "")
-        pre_path = os.path.join(args.output_dir, "pre_filter", rel_path + ".pre_filter.jsonl")
-        post_path = os.path.join(args.output_dir, "filtered", rel_path + ".filtered.jsonl")        
-
-        pre_stats = {}
-        post_stats = {}
+        rel_path = os.path.relpath(input_path, args.source_dir).replace(".jsonl.gz", "")
+        output_path = os.path.join(args.output_dir, rel_path + ".jsonl") 
         
-        if os.path.exists(pre_path):
-            logging.info(f"[Skip] File already processed, loading existing stats: {pre_path}")
-            lang_pair = rel_path.split('/')[0]
-            pre_stats[lang_pair] =count_lines_in_file(pre_path)
-            post_stats[lang_pair] = count_lines_in_file(post_path)
-
-        else:
+        skip = False
+        if os.path.exists(output_path):
             try:
-                process_file(file_path, pre_path, post_path, args.num_proc, args.conf_threshold,
-                             pre_stats=pre_stats, post_stats=post_stats)
+                input_lines = count_lines(input_path)
+                output_lines = count_lines(output_path)
+                if input_lines == output_lines:
+                    logging.info(f"[Skip] {output_path} exists and line count matches ({input_lines})")
+                    skip = True
+                else:
+                    logging.warning(f"[Reprocess] {output_path} exists but line count mismatch (input={input_lines}, output={output_lines})")
             except Exception as e:
-                logging.error(f"[Error] Failed during processing: {file_path}\n{e}")
-                continue
+                logging.warning(f"[Reprocess] Failed to count lines for {input_path} or {output_path}: {e}")
 
-        for k, v in pre_stats.items():
-            pre_stats_all[k] = pre_stats_all.get(k, 0) + v
-        for k, v in post_stats.items():
-            post_stats_all[k] = post_stats_all.get(k, 0) + v
+        if skip:
+            continue
 
-    stats_path = os.path.join(args.output_dir, "langpair_stats.tsv")
-    append_mode = os.path.exists(stats_path)
-    save_stats_table(pre_stats_all, post_stats_all, stats_path)
+        try:
+            process_file(input_path, output_path, args.num_proc)
+        except Exception as e:
+            logging.error(f"[Error] Failed during processing: {input_path}\n{e}")
+            continue
