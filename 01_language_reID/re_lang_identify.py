@@ -1,5 +1,4 @@
 import os
-import orjson
 import argparse
 from glob import glob
 from datasets import load_dataset
@@ -44,27 +43,8 @@ def get_lang_preds(source_text, target_text):
 
 
 def save_jsonl(dataset, path):
-    if len(dataset) == 0:
-        return
-    
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    
-    total_rows = len(dataset)
-    chunk_size = 100000
-    buffer_size = 64*1024*1024  # 64MB
-    
-    with open(path, "wb", buffering=buffer_size) as f:
-        for i in range(0, total_rows, chunk_size):
-            chunk = dataset[i:i + chunk_size]
-            lines = [orjson.dumps(ex, option=orjson.OPT_NON_STR_KEYS) + b"\n" 
-                    for ex in chunk]
-            f.writelines(lines)
-            
-            if (i + chunk_size) % 2500000 == 0:
-                logging.info(f"Saving Progress: {min(i + chunk_size, total_rows):,}/{total_rows:,}")
-    
+    dataset.to_json(path, lines=True)
     logging.info(f"√ Saved to {path}")
-
 
 def process_file(input_path, output_path, num_proc):
     try:
@@ -100,9 +80,11 @@ if __name__ == "__main__":
     if "glotlid" in args.model_path:
         lid_model = fasttext.load_model(args.model_path)
         logging.info("Loaded GlotLID model")
-    if "ConLID" in args.model_path:
+    elif "ConLID" in args.model_path:
         lid_model = ConLID.from_pretrained(args.model_path)
         logging.info("Loaded ConLID model")
+    else:
+        raise ValueError(f"Unknown model type in path: {args.model_path}")
 
     if args.filelist:
         with open(args.filelist, encoding="utf-8") as f:
