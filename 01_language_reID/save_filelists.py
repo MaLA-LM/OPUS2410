@@ -3,7 +3,7 @@ from glob import glob
 
 source_dir = "/scratch/project_462000941/MaLA-LM/mala-opus-dedup-2410"
 output_dir = "./filelists"
-num_splits = 64
+num_splits = 128
 
 os.makedirs(output_dir, exist_ok=True)
 
