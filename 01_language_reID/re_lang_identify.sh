@@ -9,7 +9,7 @@
 #SBATCH --time=3-00:00:00
 #SBATCH --mem=32G
 #SBATCH --account=project_462000675
-#SBATCH --array=0-63
+#SBATCH --array=0-127
 
 start_time=$(date +%s)
 echo "Job started at: $(date)"

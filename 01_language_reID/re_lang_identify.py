@@ -17,9 +17,18 @@ logging.basicConfig(
 
 
 def count_lines(file_path):
+    def _count_newlines(data):
+        return data.count(b'\n')  # Count newline bytes
+
     open_fn = gzip.open if file_path.endswith('.gz') else open
-    with open_fn(file_path, 'rt', encoding='utf-8') as f:
-        return sum(1 for _ in f)
+    total_lines = 0
+    with open_fn(file_path, 'rb') as f:  # Read in binary mode
+        while True:
+            chunk = f.read(64*1024*1024)  # Read 64MB chunks
+            if not chunk:
+                break
+            total_lines += _count_newlines(chunk)
+    return total_lines
     
 
 def get_lang_preds(source_text, target_text):
@@ -36,12 +45,23 @@ def get_lang_preds(source_text, target_text):
 def save_jsonl(dataset, path):
     if len(dataset) == 0:
         return
+    
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "wb") as f:
-        f.writelines(
-            orjson.dumps(ex, option=orjson.OPT_NON_STR_KEYS) + b"\n"
-            for ex in dataset
-        )
+    
+    total_rows = len(dataset)
+    chunk_size = 100000
+    buffer_size = 64*1024*1024  # 64MB
+    
+    with open(path, "wb", buffering=buffer_size) as f:
+        for i in range(0, total_rows, chunk_size):
+            chunk = dataset[i:i + chunk_size]
+            lines = [orjson.dumps(ex, option=orjson.OPT_NON_STR_KEYS) + b"\n" 
+                    for ex in chunk]
+            f.writelines(lines)
+            
+            if (i + chunk_size) % 2500000 == 0:
+                logging.info(f"Saving Progress: {min(i + chunk_size, total_rows):,}/{total_rows:,}")
+    
     logging.info(f"√ Saved to {path}")
 
 
