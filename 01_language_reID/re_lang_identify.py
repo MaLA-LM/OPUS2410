@@ -4,6 +4,7 @@ import argparse
 from glob import glob
 from datasets import load_dataset
 import fasttext
+from conlid import ConLID
 import sys
 import logging
 import gzip
@@ -96,7 +97,12 @@ if __name__ == "__main__":
     logging.info(f"  Filelist: {args.filelist}")
 
     os.makedirs(args.output_dir, exist_ok=True)
-    lid_model = fasttext.load_model(args.model_path)
+    if "glotlid" in args.model_path:
+        lid_model = fasttext.load_model(args.model_path)
+        logging.info("Loaded GlotLID model")
+    if "ConLID" in args.model_path:
+        lid_model = ConLID.from_pretrained(args.model_path)
+        logging.info("Loaded ConLID model")
 
     if args.filelist:
         with open(args.filelist, encoding="utf-8") as f:

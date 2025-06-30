@@ -19,9 +19,15 @@ module load pytorch/2.5
 source /flash/project_462000941/venv/opus2410_env/bin/activate
 
 SOURCE_DIR="/scratch/project_462000941/MaLA-LM/mala-opus-dedup-2410"
-OUTPUT_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-ReLID"
+
 NUM_PROC=16
-MODEL_PATH="/scratch/project_462000941/cache/huggingface/hub/models--cis-lmu--glotlid/snapshots/74cb50b709c9eefe0f790030c6c95c461b4e3b77/model.bin"
+
+# OUTPUT_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-ReLID"
+# MODEL_PATH="/scratch/project_462000941/cache/huggingface/hub/models--cis-lmu--glotlid/snapshots/74cb50b709c9eefe0f790030c6c95c461b4e3b77/model.bin"
+
+# OUTPUT_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-ReLID-by-ConLID"
+# MODEL_PATH="/scratch/project_462000941/cache/huggingface/hub/models--epfl-nlp--ConLID/snapshots/59e1e21e2301cb87f1c244bff71579a17eafaa42"
+
 FILELIST="./filelists/filelist_${SLURM_ARRAY_TASK_ID}.txt"
 
 python ./re_lang_identify.py \
