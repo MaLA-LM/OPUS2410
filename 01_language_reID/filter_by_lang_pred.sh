@@ -17,16 +17,17 @@ module use /appl/local/csc/modulefiles/
 module load pytorch/2.5
 source /flash/project_462000941/venv/opus2410_env/bin/activate
 
-SOURCE_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-ReLID"
-OUTPUT_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-filtered"
 NUM_PROC=64
 CONF_THRESHOLD=0.9
+
+SOURCE_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-ReLID-by-GlotLID"
+OUTPUT_DIR="/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410-ReLID-by-GlotLID-Threshold-${CONF_THRESHOLD//./_}"
 
 python ./filter_by_lang_pred.py \
   --source_dir "$SOURCE_DIR" \
   --output_dir "$OUTPUT_DIR" \
   --num_proc "$NUM_PROC" \
-  --conf_threshold "$CONF_THRESHOLD" \
+  --conf_threshold "$CONF_THRESHOLD"
 
 end_time=$(date +%s)
 echo "Job ended at: $(date)"

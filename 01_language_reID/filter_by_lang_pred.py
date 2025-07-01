@@ -1,5 +1,5 @@
 import os
-import orjson
+import gzip
 import argparse
 from glob import glob
 from datasets import load_dataset
@@ -31,22 +31,23 @@ def save_jsonl(dataset, path):
     if len(dataset) == 0:
         return
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "wb") as f:
-        f.writelines(
-            orjson.dumps(ex, option=orjson.OPT_NON_STR_KEYS) + b"\n"
-            for ex in dataset
-        )
+    dataset.to_json(path, lines=True)
     logging.info(f"√ Saved to {path}")
 
 
-def count_lines_in_file(file_path):
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            count = sum(1 for _ in f)
-        return count
-    except Exception as e:
-        logging.error(f"[Error] Failed to count lines in {file_path}: {e}")
-        return 0
+def count_lines(file_path):
+    def _count_newlines(data):
+        return data.count(b'\n')  # Count newline bytes
+
+    open_fn = gzip.open if file_path.endswith('.gz') else open
+    total_lines = 0
+    with open_fn(file_path, 'rb') as f:  # Read in binary mode
+        while True:
+            chunk = f.read(64*1024*1024)  # Read 64MB chunks
+            if not chunk:
+                break
+            total_lines += _count_newlines(chunk)
+    return total_lines
 
 
 def filter_file(input_path, output_path, num_proc=8, conf_threshold=0.0, pre_stats=None, post_stats=None, lang_pair=None):
@@ -60,7 +61,7 @@ def filter_file(input_path, output_path, num_proc=8, conf_threshold=0.0, pre_sta
             raise ValueError(f"Missing required fields: {required_keys - set(ds.column_names)}")
         
         # Count pre-filter stats
-        pre_stats[lang_pair] = count_lines_in_file(input_path)
+        pre_stats[lang_pair] = count_lines(input_path)
 
         def lang_match(x):
             return (
@@ -74,7 +75,10 @@ def filter_file(input_path, output_path, num_proc=8, conf_threshold=0.0, pre_sta
         save_jsonl(filtered_ds, output_path)
 
         # Count post-filter stats
-        post_stats[lang_pair] = count_lines_in_file(output_path)
+        if os.path.exists(output_path):
+            post_stats[lang_pair] = count_lines(output_path)
+        else:
+            post_stats[lang_pair] = 0
 
     except Exception as e:
         logging.error(f"[Error] Failed to filter: {input_path}\n{type(e).__name__}: {e}")
@@ -112,8 +116,8 @@ if __name__ == "__main__":
         
         if os.path.exists(output_path):
             logging.info(f"[Skip] Filter file already processed, loading existing stats: {output_path}")
-            pre_stats[lang_pair] = count_lines_in_file(input_path)
-            post_stats[lang_pair] = count_lines_in_file(output_path)
+            pre_stats[lang_pair] = count_lines(input_path)
+            post_stats[lang_pair] = count_lines(output_path)
         else:
             try:
                 filter_file(input_path, output_path, args.num_proc, args.conf_threshold,
