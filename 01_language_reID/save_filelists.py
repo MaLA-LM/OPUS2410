@@ -1,7 +1,7 @@
 import os
 from glob import glob
 
-source_dir = "/scratch/project_462000941/MaLA-LM/mala-opus-dedup-2410"
+source_dir = "/scratch/project_462000964/MaLA-LM/mala-opus-dedup-2410"
 output_dir = "./filelists"
 num_splits = 128
 
