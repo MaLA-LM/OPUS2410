@@ -14,7 +14,7 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(sys.stdout)]
 )
 
-def save_stats_table(pre_stats_all, post_stats_all, stats_path):
+def save_stats_table(pre_stats_all, post_stats_all, stats_path, append=False):
     all_lang_pairs = set(pre_stats_all) | set(post_stats_all)
     rows = []
     for lp in sorted(all_lang_pairs):
@@ -23,7 +23,7 @@ def save_stats_table(pre_stats_all, post_stats_all, stats_path):
         rate = post / pre if pre > 0 else 0.0
         rows.append({"lang_pair": lp, "pre_count": pre, "post_count": post, "retention_rate": f"{rate:.2%}"})
     df = pd.DataFrame(rows)
-    df.to_csv(stats_path, sep="\t", index=False, mode="w", header=True)
+    df.to_csv(stats_path, sep="\t", index=False, mode="a" if append else "w", header=not append)
     logging.info(f"[Saved] Language pair filter stats saved to {stats_path}")
 
 
@@ -89,6 +89,7 @@ if __name__ == "__main__":
     parser.add_argument("--output_dir", required=True, help="Directory to save filtered .jsonl files")
     parser.add_argument("--num_proc", type=int, default=1, help="Number of parallel processes")
     parser.add_argument("--conf_threshold", type=float, default=0.0, help="Confidence threshold for filtering")
+    parser.add_argument("--filelist", type=str, help="Optional: Path to file containing list of files to process")
     args = parser.parse_args()
 
     logging.info("Arguments:")
@@ -96,12 +97,17 @@ if __name__ == "__main__":
     logging.info(f"  Output Directory: {args.output_dir}")
     logging.info(f"  Number of Processes: {args.num_proc}")
     logging.info(f"  Confidence Threshold: {args.conf_threshold}")
+    logging.info(f"  Filelist: {args.filelist}")
 
     os.makedirs(args.output_dir, exist_ok=True)
     pre_stats_all = {}
     post_stats_all = {}
 
-    all_files = sorted(glob(f"{args.source_dir}/**/*.jsonl", recursive=True))
+    if args.filelist:
+        with open(args.filelist, encoding="utf-8") as f:
+            all_files = [line.strip() for line in f if line.strip()]
+    else:
+        all_files = sorted(glob(f"{args.source_dir}/**/*.jsonl", recursive=True))
 
     for idx, input_path in enumerate(all_files, 1):
         logging.info(f"[{idx}/{len(all_files)}] Processing file: {os.path.basename(input_path)}")
@@ -132,4 +138,5 @@ if __name__ == "__main__":
             post_stats_all[k] = post_stats_all.get(k, 0) + v
 
     stats_path = os.path.join(args.output_dir, "filter_stats.tsv")
-    save_stats_table(pre_stats_all, post_stats_all, stats_path)
+    append_mode = os.path.exists(stats_path)
+    save_stats_table(pre_stats_all, post_stats_all, stats_path, append_mode)
