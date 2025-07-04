@@ -5,7 +5,13 @@ import numpy as np
 import torch
 import torch.nn as nn
 from safetensors.torch import load_model as load_model_as_safetensor
+import torch
 
+"""
+In this way, each child process only uses one thread, avoiding excessive scheduling.
+"""
+torch.set_num_threads(1)    # Sets the number of threads used for intra-op parallelism on CPU to 1
+torch.set_num_interop_threads(1)    # Sets the number of threads used for inter-op parallelism on CPU to 1
 
 class SpaceTokenizer:
     def __init__(self):
