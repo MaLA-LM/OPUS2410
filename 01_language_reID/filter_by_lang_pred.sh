@@ -31,7 +31,8 @@ python ./filter_by_lang_pred.py \
   --output_dir "$OUTPUT_DIR" \
   --num_proc "$NUM_PROC" \
   --conf_threshold "$CONF_THRESHOLD" \
-  --filelist "$FILELIST"
+  --filelist "$FILELIST" \
+  --job_id "${SLURM_ARRAY_TASK_ID}"
 
 end_time=$(date +%s)
 echo "Job ended at: $(date)"

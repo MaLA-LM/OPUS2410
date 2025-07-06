@@ -90,6 +90,7 @@ if __name__ == "__main__":
     parser.add_argument("--num_proc", type=int, default=1, help="Number of parallel processes")
     parser.add_argument("--conf_threshold", type=float, default=0.0, help="Confidence threshold for filtering")
     parser.add_argument("--filelist", type=str, help="Optional: Path to file containing list of files to process")
+    parser.add_argument("--job_id", type=str, help="Optional: Job ID")
     args = parser.parse_args()
 
     logging.info("Arguments:")
@@ -137,6 +138,14 @@ if __name__ == "__main__":
         for k, v in post_stats.items():
             post_stats_all[k] = post_stats_all.get(k, 0) + v
 
-    stats_path = os.path.join(args.output_dir, "filter_stats.tsv")
-    append_mode = os.path.exists(stats_path)
-    save_stats_table(pre_stats_all, post_stats_all, stats_path, append_mode)
+    if args.job_id:
+        stats_filename = f"partial_stats_{args.job_id}.tsv"
+    else:
+        stats_filename = "filter_stats.tsv"
+
+    # Create a directory for partial stats
+    partial_stats_dir = os.path.join(args.output_dir, "partial_stats")
+    os.makedirs(partial_stats_dir, exist_ok=True)
+    stats_path = os.path.join(partial_stats_dir, stats_filename)
+    # append_mode = os.path.exists(stats_path)
+    save_stats_table(pre_stats_all, post_stats_all, stats_path, append=False)
