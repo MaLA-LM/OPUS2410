@@ -1329,10 +1329,6 @@
       "lang_name": "pocomam oriental"
     },
     {
-      "lang_code": "vep_Latn",
-      "lang_name": "veps"
-    },
-    {
       "lang_code": "dar_Cyrl",
       "lang_name": "dargwa"
     },
@@ -1441,10 +1437,6 @@
       "lang_name": "yali"
     },
     {
-      "lang_code": "hat_Latn",
-      "lang_name": "haitian creole"
-    },
-    {
       "lang_code": "kpx_Latn",
       "lang_name": "koiali"
     },
@@ -1515,10 +1507,6 @@
     {
       "lang_code": "ork_Latn",
       "lang_name": "orokaiva"
-    },
-    {
-      "lang_code": "mon_Mong",
-      "lang_name": "mongol"
     },
     {
       "lang_code": "tnb_Deva",
@@ -1639,10 +1627,6 @@
     {
       "lang_code": "cjs_Latn",
       "lang_name": "chehalis"
-    },
-    {
-      "lang_code": "sun_Latn",
-      "lang_name": "sungor"
     },
     {
       "lang_code": "umo_Latn",
@@ -1873,10 +1857,6 @@
       "lang_name": "molala"
     },
     {
-      "lang_code": "jam_Latn",
-      "lang_name": "jamaican creole"
-    },
-    {
       "lang_code": "woi_Latn",
       "lang_name": "woisika"
     },
@@ -1899,10 +1879,6 @@
     {
       "lang_code": "com_Latn",
       "lang_name": "comanche"
-    },
-    {
-      "lang_code": "gsw_Latn",
-      "lang_name": "alsatian"
     },
     {
       "lang_code": "crd_Latn",
@@ -1945,10 +1921,6 @@
       "lang_name": "selknam"
     },
     {
-      "lang_code": "bug_Bugi",
-      "lang_name": "bugis"
-    },
-    {
       "lang_code": "des_Latn",
       "lang_name": "desano"
     },
@@ -1971,10 +1943,6 @@
     {
       "lang_code": "mgk_Latn",
       "lang_name": "matngele"
-    },
-    {
-      "lang_code": "dsb_Latn",
-      "lang_name": "sorbian"
     },
     {
       "lang_code": "mwe_Latn",
@@ -2129,10 +2097,6 @@
       "lang_name": "tuyuca"
     },
     {
-      "lang_code": "war_Latn",
-      "lang_name": "waray-waray"
-    },
-    {
       "lang_code": "kpv_Cyrl",
       "lang_name": "komi-zyrian"
     },
@@ -2261,10 +2225,6 @@
       "lang_name": "a-pucikwar"
     },
     {
-      "lang_code": "que_Latn",
-      "lang_name": "quechan"
-    },
-    {
       "lang_code": "sva_Geor",
       "lang_name": "svan"
     },
@@ -2331,10 +2291,6 @@
     {
       "lang_code": "dhv_Latn",
       "lang_name": "drehu"
-    },
-    {
-      "lang_code": "kmr_Latn",
-      "lang_name": "kurmanji"
     },
     {
       "lang_code": "sln_Latn",
@@ -2405,10 +2361,6 @@
       "lang_name": "rumu"
     },
     {
-      "lang_code": "slv_Latn",
-      "lang_name": "slovene"
-    },
-    {
       "lang_code": "rti_Latn",
       "lang_name": "roti"
     },
@@ -2451,10 +2403,6 @@
     {
       "lang_code": "tgg_Latn",
       "lang_name": "tangga"
-    },
-    {
-      "lang_code": "min_Latn",
-      "lang_name": "mina"
     },
     {
       "lang_code": "aom_Latn",
@@ -2507,10 +2455,6 @@
     {
       "lang_code": "clm_Latn",
       "lang_name": "clallam"
-    },
-    {
-      "lang_code": "aym_Latn",
-      "lang_name": "ayomán"
     },
     {
       "lang_code": "mqx_Latn",
@@ -2629,10 +2573,6 @@
       "lang_name": "budu"
     },
     {
-      "lang_code": "tet_Latn",
-      "lang_name": "tetun"
-    },
-    {
       "lang_code": "amj_Latn",
       "lang_name": "amo"
     },
@@ -2691,10 +2631,6 @@
     {
       "lang_code": "niv_Cyrl",
       "lang_name": "nivkh"
-    },
-    {
-      "lang_code": "myv_Cyrl",
-      "lang_name": "mordvin"
     },
     {
       "lang_code": "mlq_Hans",
@@ -2775,10 +2711,6 @@
     {
       "lang_code": "pbc_Latn",
       "lang_name": "paresi"
-    },
-    {
-      "lang_code": "mhr_Cyrl",
-      "lang_name": "mari"
     },
     {
       "lang_code": "csz_Latn",
@@ -2973,10 +2905,6 @@
       "lang_name": "colac"
     },
     {
-      "lang_code": "xal_Mong",
-      "lang_name": "oirat"
-    },
-    {
       "lang_code": "gcr_Latn",
       "lang_name": "guianese french creole"
     },
@@ -3045,10 +2973,6 @@
       "lang_name": "ishkashmi"
     },
     {
-      "lang_code": "nya_Latn",
-      "lang_name": "runyankore"
-    },
-    {
       "lang_code": "bim_Latn",
       "lang_name": "bimoba"
     },
@@ -3087,10 +3011,6 @@
     {
       "lang_code": "owi_Latn",
       "lang_name": "owininga"
-    },
-    {
-      "lang_code": "eng_Latn",
-      "lang_name": "enga"
     },
     {
       "lang_code": "lnw_Latn",
@@ -3473,10 +3393,6 @@
       "lang_name": "timucua"
     },
     {
-      "lang_code": "bjn_Latn",
-      "lang_name": "bajau"
-    },
-    {
       "lang_code": "pmt_Latn",
       "lang_name": "tuamotuan"
     },
@@ -3563,10 +3479,6 @@
     {
       "lang_code": "pwi_Latn",
       "lang_name": "patwin"
-    },
-    {
-      "lang_code": "fur_Latn",
-      "lang_name": "fur"
     },
     {
       "lang_code": "may_Latn",
@@ -3677,20 +3589,12 @@
       "lang_name": "puluwat"
     },
     {
-      "lang_code": "oss_Cyrl",
-      "lang_name": "ossetic"
-    },
-    {
       "lang_code": "ber_Tfng",
       "lang_name": "berber"
     },
     {
       "lang_code": "ktz_Latn",
       "lang_name": "ju|'hoan"
-    },
-    {
-      "lang_code": "tpi_Latn",
-      "lang_name": "toaripi"
     },
     {
       "lang_code": "bft_Tibt",
@@ -3735,10 +3639,6 @@
     {
       "lang_code": "guz_Latn",
       "lang_name": "gusii"
-    },
-    {
-      "lang_code": "chv_Cyrl",
-      "lang_name": "chamalal"
     },
     {
       "lang_code": "cnm_Latn",
@@ -3987,10 +3887,6 @@
     {
       "lang_code": "bwt_Latn",
       "lang_name": "bakueri"
-    },
-    {
-      "lang_code": "pih_Latn",
-      "lang_name": "paita"
     },
     {
       "lang_code": "tcx_Taml",
@@ -4345,10 +4241,6 @@
       "lang_name": "atchin"
     },
     {
-      "lang_code": "slk_Latn",
-      "lang_name": "sulka"
-    },
-    {
       "lang_code": "mok_Latn",
       "lang_name": "mokilese"
     },
@@ -4541,10 +4433,6 @@
       "lang_name": "wik munkan"
     },
     {
-      "lang_code": "azb_Arab",
-      "lang_name": "azari"
-    },
-    {
       "lang_code": "aik_Latn",
       "lang_name": "aikaná"
     },
@@ -4681,10 +4569,6 @@
       "lang_name": "wari'"
     },
     {
-      "lang_code": "chy_Latn",
-      "lang_name": "arapaho"
-    },
-    {
       "lang_code": "sqs_Latn",
       "lang_name": "siroi"
     },
@@ -4809,10 +4693,6 @@
       "lang_name": "koiari"
     },
     {
-      "lang_code": "mai_Deva",
-      "lang_name": "maidu"
-    },
-    {
       "lang_code": "eme_Latn",
       "lang_name": "émérillon"
     },
@@ -4927,10 +4807,6 @@
     {
       "lang_code": "gil_Latn",
       "lang_name": "kiribati"
-    },
-    {
-      "lang_code": "grn_Latn",
-      "lang_name": "guaraní"
     },
     {
       "lang_code": "anc_Latn",
@@ -5143,10 +5019,6 @@
     {
       "lang_code": "bej_Arab",
       "lang_name": "beja"
-    },
-    {
-      "lang_code": "fry_Latn",
-      "lang_name": "frisian"
     },
     {
       "lang_code": "liv_Latn",
@@ -5445,10 +5317,6 @@
       "lang_name": "low german"
     },
     {
-      "lang_code": "lug_Latn",
-      "lang_name": "lugbara"
-    },
-    {
       "lang_code": "dma_Arab",
       "lang_name": "dumaki"
     },
@@ -5541,10 +5409,6 @@
       "lang_name": "ngombe"
     },
     {
-      "lang_code": "hau_Latn",
-      "lang_name": "haruai"
-    },
-    {
       "lang_code": "rap_Latn",
       "lang_name": "rapanui"
     },
@@ -5563,10 +5427,6 @@
     {
       "lang_code": "qnt_Latn",
       "lang_name": "canela"
-    },
-    {
-      "lang_code": "twi_Latn",
-      "lang_name": "tiwi"
     },
     {
       "lang_code": "mca_Latn",
@@ -5653,10 +5513,6 @@
       "lang_name": "gokana"
     },
     {
-      "lang_code": "cdo_Latn",
-      "lang_name": "chaozhou"
-    },
-    {
       "lang_code": "gur_Latn",
       "lang_name": "gurenne"
     },
@@ -5687,10 +5543,6 @@
     {
       "lang_code": "dim_Ethi",
       "lang_name": "dime"
-    },
-    {
-      "lang_code": "div_Thaa",
-      "lang_name": "dhivehi"
     },
     {
       "lang_code": "mtq_Latn",
@@ -5735,10 +5587,6 @@
     {
       "lang_code": "bka_Latn",
       "lang_name": "bakairí"
-    },
-    {
-      "lang_code": "ina_Latn",
-      "lang_name": "innamincka"
     },
     {
       "lang_code": "ddb_Latn",
@@ -5827,10 +5675,6 @@
     {
       "lang_code": "spg_Latn",
       "lang_name": "sougb"
-    },
-    {
-      "lang_code": "bel_Latn",
-      "lang_name": "bella coola"
     },
     {
       "lang_code": "dok_Latn",
@@ -5929,10 +5773,6 @@
       "lang_name": "timorese"
     },
     {
-      "lang_code": "kbp_Latn",
-      "lang_name": "kabiyé"
-    },
-    {
       "lang_code": "tjo_Latn",
       "lang_name": "teribe"
     },
@@ -5951,10 +5791,6 @@
     {
       "lang_code": "kpg_Latn",
       "lang_name": "kapingamarangi"
-    },
-    {
-      "lang_code": "sah_Cyrl",
-      "lang_name": "yakut"
     },
     {
       "lang_code": "alp_Latn",
@@ -6309,10 +6145,6 @@
       "lang_name": "kuku-yalanji"
     },
     {
-      "lang_code": "tgl_Latn",
-      "lang_name": "tangale"
-    },
-    {
       "lang_code": "tag_Tagb",
       "lang_name": "tagbanwa"
     },
@@ -6343,10 +6175,6 @@
     {
       "lang_code": "hlb_Deva",
       "lang_name": "halbi"
-    },
-    {
-      "lang_code": "cor_Latn",
-      "lang_name": "cora"
     },
     {
       "lang_code": "dse_Sgnw",
@@ -6499,10 +6327,6 @@
     {
       "lang_code": "arn_Latn",
       "lang_name": "mapudungun"
-    },
-    {
-      "lang_code": "bar_Latn",
-      "lang_name": "bari"
     },
     {
       "lang_code": "wrb_Latn",
@@ -6681,10 +6505,6 @@
       "lang_name": "kuikúro"
     },
     {
-      "lang_code": "gla_Latn",
-      "lang_name": "gaelic"
-    },
-    {
       "lang_code": "yss_Latn",
       "lang_name": "yessan-mayo"
     },
@@ -6703,10 +6523,6 @@
     {
       "lang_code": "any_Latn",
       "lang_name": "anyi"
-    },
-    {
-      "lang_code": "ful_Latn",
-      "lang_name": "fulah"
     },
     {
       "lang_code": "man_Deva",
@@ -6909,10 +6725,6 @@
       "lang_name": "mamvu"
     },
     {
-      "lang_code": "new_Deva",
-      "lang_name": "newari"
-    },
-    {
       "lang_code": "jiy_Yiii",
       "lang_name": "jino"
     },
@@ -6947,10 +6759,6 @@
     {
       "lang_code": "anf_Latn",
       "lang_name": "anufo"
-    },
-    {
-      "lang_code": "ltz_Latn",
-      "lang_name": "luxemburgeois"
     },
     {
       "lang_code": "dds_Latn",
@@ -7003,10 +6811,6 @@
     {
       "lang_code": "byx_Deva",
       "lang_name": "baragaunle"
-    },
-    {
-      "lang_code": "hak_Hant",
-      "lang_name": "hokkien"
     },
     {
       "lang_code": "ads_Sgnw",
@@ -7119,10 +6923,6 @@
     {
       "lang_code": "mdj_Latn",
       "lang_name": "mangbetu"
-    },
-    {
-      "lang_code": "sot_Latn",
-      "lang_name": "southern sotho"
     },
     {
       "lang_code": "wry_Latn",
@@ -7315,6 +7115,178 @@
     {
       "lang_code": "ros_Latn",
       "lang_name": "arosi"
+    },
+    {
+      "lang_code": "arc_Hebr",
+      "lang_name": "Aramaic (Hebrew)"
+    },
+    {
+      "lang_code": "arc_Syrc",
+      "lang_name": "Aramaic (Syriac)"
+    },
+    {
+      "lang_code": "ave_Latn",
+      "lang_name": "Avestan (Latin)"
+    },
+    {
+      "lang_code": "bzt_Latn",
+      "lang_name": "Brithenig (Latin)"
+    },
+    {
+      "lang_code": "chu_Latn",
+      "lang_name": "Church Slavic (Latin)"
+    },
+    {
+      "lang_code": "dws_Latn",
+      "lang_name": "Dutton World Speedwords (Latin)"
+    },
+    {
+      "lang_code": "enm_Latn",
+      "lang_name": "Middle English (1100-1500) (Latin)"
+    },
+    {
+      "lang_code": "frm_Latn",
+      "lang_name": "Middle French (ca. 1400-1600) (Latin)"
+    },
+    {
+      "lang_code": "got_Latn",
+      "lang_name": "Gothic (Latin)"
+    },
+    {
+      "lang_code": "got_Zyyy",
+      "lang_name": "Gothic (Common)"
+    },
+    {
+      "lang_code": "grc_Grek",
+      "lang_name": "Ancient Greek (to 1453) (Greek)"
+    },
+    {
+      "lang_code": "grc_Latn",
+      "lang_name": "Ancient Greek (to 1453) (Latin)"
+    },
+    {
+      "lang_code": "ido_Arab",
+      "lang_name": "Ido (Arabic)"
+    },
+    {
+      "lang_code": "ido_Deva",
+      "lang_name": "Ido (Devanagari)"
+    },
+    {
+      "lang_code": "ido_Hang",
+      "lang_name": "Ido (Hangul)"
+    },
+    {
+      "lang_code": "ile_Kana",
+      "lang_name": "Interlingue (Katakana)"
+    },
+    {
+      "lang_code": "jbo_Latn",
+      "lang_name": "Lojban (Latin)"
+    },
+    {
+      "lang_code": "lad_Hebr",
+      "lang_name": "Ladino (Hebrew)"
+    },
+    {
+      "lang_code": "ldn_Latn",
+      "lang_name": "Láadan (Latin)"
+    },
+    {
+      "lang_code": "lfn_Cyrl",
+      "lang_name": "Lingua Franca Nova (Cyrillic)"
+    },
+    {
+      "lang_code": "lfn_Latn",
+      "lang_name": "Lingua Franca Nova (Latin)"
+    },
+    {
+      "lang_code": "lzh_Hani",
+      "lang_name": "Literary Chinese (Han)"
+    },
+    {
+      "lang_code": "nci_Latn",
+      "lang_name": "Classical Nahuatl (Latin)"
+    },
+    {
+      "lang_code": "nov_Latn",
+      "lang_name": "Novial (Latin)"
+    },
+    {
+      "lang_code": "oar_Hebr",
+      "lang_name": "Old Aramaic (up to 700 BCE) (Hebrew)"
+    },
+    {
+      "lang_code": "osp_Latn",
+      "lang_name": "Old Spanish (Latin)"
+    },
+    {
+      "lang_code": "ota_Arab",
+      "lang_name": "Ottoman Turkish (1500-1928) (Arabic)"
+    },
+    {
+      "lang_code": "ota_Latn",
+      "lang_name": "Ottoman Turkish (1500-1928) (Latin)"
+    },
+    {
+      "lang_code": "phn_Phnx",
+      "lang_name": "Phoenician (Phoenician)"
+    },
+    {
+      "lang_code": "pli_Deva",
+      "lang_name": "Pali (Devanagari)"
+    },
+    {
+      "lang_code": "qya_Latn",
+      "lang_name": "Quenya (Latin)"
+    },
+    {
+      "lang_code": "san_Latn",
+      "lang_name": "Sanskrit (Latin)"
+    },
+    {
+      "lang_code": "sgn_Latn",
+      "lang_name": "Sign Languages (Latin)"
+    },
+    {
+      "lang_code": "sjn_Latn",
+      "lang_name": "Sindarin (Latin)"
+    },
+    {
+      "lang_code": "syr_Latn",
+      "lang_name": "Syriac (Latin)"
+    },
+    {
+      "lang_code": "syr_Syrc",
+      "lang_name": "Syriac (Syriac)"
+    },
+    {
+      "lang_code": "tlh_Latn",
+      "lang_name": "Klingon (Latin)"
+    },
+    {
+      "lang_code": "tmr_Hebr",
+      "lang_name": "Jewish Babylonian Aramaic (ca. 200-1200 CE) (Hebrew)"
+    },
+    {
+      "lang_code": "tok_Latn",
+      "lang_name": "Toki Pona (Latin)"
+    },
+    {
+      "lang_code": "tzl_Latn",
+      "lang_name": "Talossan (Latin)"
+    },
+    {
+      "lang_code": "xcl_Armn",
+      "lang_name": "Classical Armenian (Armenian)"
+    },
+    {
+      "lang_code": "afh_Latn",
+      "lang_name": "Afrihili (Latin)"
+    },
+    {
+      "lang_code": "ase_Latn",
+      "lang_name": "American Sign Language (Latin)"
     }
   ],
   "1": [
@@ -8165,6 +8137,362 @@
     {
       "lang_code": "mal_Mlym",
       "lang_name": "malayalam"
+    },
+    {
+      "lang_code": "abk_Arab",
+      "lang_name": "Abkhazian (Arabic)"
+    },
+    {
+      "lang_code": "abk_Grek",
+      "lang_name": "Abkhazian (Greek)"
+    },
+    {
+      "lang_code": "abk_Hebr",
+      "lang_name": "Abkhazian (Hebrew)"
+    },
+    {
+      "lang_code": "abk_Latn",
+      "lang_name": "Abkhazian (Latin)"
+    },
+    {
+      "lang_code": "ady_Geor",
+      "lang_name": "Adyghe (Georgian)"
+    },
+    {
+      "lang_code": "alt_Cyrl",
+      "lang_name": "Southern Altai (Cyrillic)"
+    },
+    {
+      "lang_code": "anp_Deva",
+      "lang_name": "Angika (Devanagari)"
+    },
+    {
+      "lang_code": "anp_Latn",
+      "lang_name": "Angika (Latin)"
+    },
+    {
+      "lang_code": "arg_Arab",
+      "lang_name": "Aragonese (Arabic)"
+    },
+    {
+      "lang_code": "arg_Cyrl",
+      "lang_name": "Aragonese (Cyrillic)"
+    },
+    {
+      "lang_code": "bnt_Latn",
+      "lang_name": "Bantu (Latin)"
+    },
+    {
+      "lang_code": "bpy_Deva",
+      "lang_name": "Bishnupriya (Devanagari)"
+    },
+    {
+      "lang_code": "bua_Latn",
+      "lang_name": "Buriat (Latin)"
+    },
+    {
+      "lang_code": "bxr_Cyrl",
+      "lang_name": "Russia Buriat (Cyrillic)"
+    },
+    {
+      "lang_code": "bxr_Latn",
+      "lang_name": "Russia Buriat (Latin)"
+    },
+    {
+      "lang_code": "byn_Latn",
+      "lang_name": "Bilin (Latin)"
+    },
+    {
+      "lang_code": "cha_Hang",
+      "lang_name": "Chamorro (Hangul)"
+    },
+    {
+      "lang_code": "chm_Cyrl",
+      "lang_name": "Mari (Russia) (Cyrillic)"
+    },
+    {
+      "lang_code": "chq_Latn",
+      "lang_name": "Quiotepec Chinantec (Latin)"
+    },
+    {
+      "lang_code": "chr_Latn",
+      "lang_name": "Cherokee (Latin)"
+    },
+    {
+      "lang_code": "cku_Latn",
+      "lang_name": "Koasati (Latin)"
+    },
+    {
+      "lang_code": "cre_Arab",
+      "lang_name": "Cree (Arabic)"
+    },
+    {
+      "lang_code": "cre_Grek",
+      "lang_name": "Cree (Greek)"
+    },
+    {
+      "lang_code": "cre_Latn",
+      "lang_name": "Cree (Latin)"
+    },
+    {
+      "lang_code": "czn_Latn",
+      "lang_name": "Zenzontepec Chatino (Latin)"
+    },
+    {
+      "lang_code": "div_Latn",
+      "lang_name": "Dhivehi (Latin)"
+    },
+    {
+      "lang_code": "djk_Latn",
+      "lang_name": "Aukaans (Latin)"
+    },
+    {
+      "lang_code": "dop_Latn",
+      "lang_name": "Lukpa (Latin)"
+    },
+    {
+      "lang_code": "dtp_Latn",
+      "lang_name": "Central Dusun (Latin)"
+    },
+    {
+      "lang_code": "dzo_Latn",
+      "lang_name": "Dzongkha (Latin)"
+    },
+    {
+      "lang_code": "fkv_Latn",
+      "lang_name": "Kven Finnish (Latin)"
+    },
+    {
+      "lang_code": "fry_Cyrl",
+      "lang_name": "Western Frisian (Cyrillic)"
+    },
+    {
+      "lang_code": "gla_Hira",
+      "lang_name": "Gaelic (Hiragana)"
+    },
+    {
+      "lang_code": "gos_Latn",
+      "lang_name": "Gronings (Latin)"
+    },
+    {
+      "lang_code": "hch_Hebr",
+      "lang_name": "Huichol (Hebrew)"
+    },
+    {
+      "lang_code": "her_Grek",
+      "lang_name": "Herero (Greek)"
+    },
+    {
+      "lang_code": "her_Hebr",
+      "lang_name": "Herero (Hebrew)"
+    },
+    {
+      "lang_code": "hif_Deva",
+      "lang_name": "Fiji Hindi (Devanagari)"
+    },
+    {
+      "lang_code": "hrx_Latn",
+      "lang_name": "Hunsrik (Latin)"
+    },
+    {
+      "lang_code": "hup_Latn",
+      "lang_name": "Hupa (Latin)"
+    },
+    {
+      "lang_code": "hus_Latn",
+      "lang_name": "Huastec (Latin)"
+    },
+    {
+      "lang_code": "inh_Latn",
+      "lang_name": "Ingush (Latin)"
+    },
+    {
+      "lang_code": "iro_Hang",
+      "lang_name": "Iroquoian languages (Hangul)"
+    },
+    {
+      "lang_code": "jaa_Hira",
+      "lang_name": "Jamamadí (Hiragana)"
+    },
+    {
+      "lang_code": "jak_Latn",
+      "lang_name": "Jakun (Latin)"
+    },
+    {
+      "lang_code": "kac_Latn",
+      "lang_name": "Kachin (Latin)"
+    },
+    {
+      "lang_code": "kal_Grek",
+      "lang_name": "Kalaallisut (Greek)"
+    },
+    {
+      "lang_code": "kar_Hang",
+      "lang_name": "Karen languages (Hangul)"
+    },
+    {
+      "lang_code": "kbh_Latn",
+      "lang_name": "Camsá (Latin)"
+    },
+    {
+      "lang_code": "kcg_Latn",
+      "lang_name": "Tyap (Latin)"
+    },
+    {
+      "lang_code": "kea_Latn",
+      "lang_name": "Kabuverdianu (Latin)"
+    },
+    {
+      "lang_code": "kom_Latn",
+      "lang_name": "Komi (Latin)"
+    },
+    {
+      "lang_code": "krl_Latn",
+      "lang_name": "Karelian (Latin)"
+    },
+    {
+      "lang_code": "kua_Latn",
+      "lang_name": "Kuanyama (Latin)"
+    },
+    {
+      "lang_code": "lkt_Hang",
+      "lang_name": "Lakota (Hangul)"
+    },
+    {
+      "lang_code": "mhr_Latn",
+      "lang_name": "Eastern Mari (Latin)"
+    },
+    {
+      "lang_code": "mrj_Latn",
+      "lang_name": "Hill Mari (Latin)"
+    },
+    {
+      "lang_code": "mus_Grek",
+      "lang_name": "Creek (Greek)"
+    },
+    {
+      "lang_code": "mus_Latn",
+      "lang_name": "Creek (Latin)"
+    },
+    {
+      "lang_code": "new_Cyrl",
+      "lang_name": "Newari (Cyrillic)"
+    },
+    {
+      "lang_code": "new_Latn",
+      "lang_name": "Newari (Latin)"
+    },
+    {
+      "lang_code": "niu_Latn",
+      "lang_name": "Niuean (Latin)"
+    },
+    {
+      "lang_code": "nog_Cyrl",
+      "lang_name": "Nogai (Cyrillic)"
+    },
+    {
+      "lang_code": "oci_Cyrl",
+      "lang_name": "Occitan (post 1500) (Cyrillic)"
+    },
+    {
+      "lang_code": "ojb_Cans",
+      "lang_name": "Ojibwa, Northwestern (Unified Canadian Aboriginal Syllabics)"
+    },
+    {
+      "lang_code": "oji_Latn",
+      "lang_name": "Ojibwa (Latin)"
+    },
+    {
+      "lang_code": "olo_Cyrl",
+      "lang_name": "Livvi (Cyrillic)"
+    },
+    {
+      "lang_code": "oss_Latn",
+      "lang_name": "Ossetian (Latin)"
+    },
+    {
+      "lang_code": "pdc_Latn",
+      "lang_name": "Pennsylvania German (Latin)"
+    },
+    {
+      "lang_code": "ppk_Latn",
+      "lang_name": "Uma (Latin)"
+    },
+    {
+      "lang_code": "rmy_Latn",
+      "lang_name": "Vlax Romani (Latin)"
+    },
+    {
+      "lang_code": "rup_Cyrl",
+      "lang_name": "Aromanian (Cyrillic)"
+    },
+    {
+      "lang_code": "shs_Latn",
+      "lang_name": "Shuswap (Latin)"
+    },
+    {
+      "lang_code": "smn_Latn",
+      "lang_name": "Inari Sami (Latin)"
+    },
+    {
+      "lang_code": "smo_Cyrl",
+      "lang_name": "Samoan (Cyrillic)"
+    },
+    {
+      "lang_code": "swg_Latn",
+      "lang_name": "Swabian (Latin)"
+    },
+    {
+      "lang_code": "trs_Latn",
+      "lang_name": "Triqui, Chicahuaxtla (Latin)"
+    },
+    {
+      "lang_code": "tsz_Latn",
+      "lang_name": "Purepecha (Latin)"
+    },
+    {
+      "lang_code": "tyj_Latn",
+      "lang_name": "Tai Yo (Latin)"
+    },
+    {
+      "lang_code": "udm_Latn",
+      "lang_name": "Udmurt (Latin)"
+    },
+    {
+      "lang_code": "usp_Latn",
+      "lang_name": "Uspanteko (Latin)"
+    },
+    {
+      "lang_code": "vot_Cyrl",
+      "lang_name": "Votic (Cyrillic)"
+    },
+    {
+      "lang_code": "wae_Latn",
+      "lang_name": "Walser (Latin)"
+    },
+    {
+      "lang_code": "xal_Cyrl",
+      "lang_name": "Kalmyk (Cyrillic)"
+    },
+    {
+      "lang_code": "xal_Latn",
+      "lang_name": "Kalmyk (Latin)"
+    },
+    {
+      "lang_code": "yaq_Latn",
+      "lang_name": "Yaqui (Latin)"
+    },
+    {
+      "lang_code": "yua_Latn",
+      "lang_name": "Yucateco (Latin)"
+    },
+    {
+      "lang_code": "zam_Latn",
+      "lang_name": "Zapotec, Miahuatlán (Latin)"
+    },
+    {
+      "lang_code": "iku_Latn",
+      "lang_name": "Inuktitut (Latin)"
     }
   ],
   "2": [
@@ -8243,6 +8571,202 @@
     {
       "lang_code": "gle_Latn",
       "lang_name": "irish"
+    },
+    {
+      "lang_code": "aar_Arab",
+      "lang_name": "Afar (Arabic)"
+    },
+    {
+      "lang_code": "ach_Latn",
+      "lang_name": "Acoli (Latin)"
+    },
+    {
+      "lang_code": "ava_Arab",
+      "lang_name": "Avaric (Arabic)"
+    },
+    {
+      "lang_code": "ava_Latn",
+      "lang_name": "Avaric (Latin)"
+    },
+    {
+      "lang_code": "aym_Zyyy",
+      "lang_name": "Aymara (Common)"
+    },
+    {
+      "lang_code": "bak_Hani",
+      "lang_name": "Bashkir (Han)"
+    },
+    {
+      "lang_code": "bak_Latn",
+      "lang_name": "Bashkir (Latin)"
+    },
+    {
+      "lang_code": "bbc_Latn",
+      "lang_name": "Batak Toba (Latin)"
+    },
+    {
+      "lang_code": "bem_Latn",
+      "lang_name": "Bemba (Latin)"
+    },
+    {
+      "lang_code": "brx_Latn",
+      "lang_name": "Bodo (Latin)"
+    },
+    {
+      "lang_code": "che_Latn",
+      "lang_name": "Chechen (Latin)"
+    },
+    {
+      "lang_code": "chv_Latn",
+      "lang_name": "Chuvash (Latin)"
+    },
+    {
+      "lang_code": "cjk_Latn",
+      "lang_name": "Chokwe (Latin)"
+    },
+    {
+      "lang_code": "dik_Latn",
+      "lang_name": "Southwestern Dinka (Latin)"
+    },
+    {
+      "lang_code": "diq_Latn",
+      "lang_name": "Dimli (Latin)"
+    },
+    {
+      "lang_code": "efi_Cyrl",
+      "lang_name": "Efik (Cyrillic)"
+    },
+    {
+      "lang_code": "gom_Deva",
+      "lang_name": "Goan Konkani (Devanagari)"
+    },
+    {
+      "lang_code": "gom_Latn",
+      "lang_name": "Goan Konkani (Latin)"
+    },
+    {
+      "lang_code": "haz_Latn",
+      "lang_name": "Hazaragi (Latin)"
+    },
+    {
+      "lang_code": "hmn_Latn",
+      "lang_name": "Hmong (Latin)"
+    },
+    {
+      "lang_code": "kam_Latn",
+      "lang_name": "Kamba (Latin)"
+    },
+    {
+      "lang_code": "kat_Latn",
+      "lang_name": "Georgian (Latin)"
+    },
+    {
+      "lang_code": "kha_Latn",
+      "lang_name": "Khasi (Latin)"
+    },
+    {
+      "lang_code": "kmb_Latn",
+      "lang_name": "Kimbundu (Latin)"
+    },
+    {
+      "lang_code": "kok_Latn",
+      "lang_name": "Konkani (macrolanguage) (Latin)"
+    },
+    {
+      "lang_code": "lav_Hani",
+      "lang_name": "Latvian (Han)"
+    },
+    {
+      "lang_code": "lit_Hebr",
+      "lang_name": "Lithuanian (Hebrew)"
+    },
+    {
+      "lang_code": "lrc_Laoo",
+      "lang_name": "Northern Luri (Lao)"
+    },
+    {
+      "lang_code": "luo_Latn",
+      "lang_name": "Luo (Kenya and Tanzania) (Latin)"
+    },
+    {
+      "lang_code": "mkd_Latn",
+      "lang_name": "Macedonian (Latin)"
+    },
+    {
+      "lang_code": "mni_Latn",
+      "lang_name": "Manipuri (Latin)"
+    },
+    {
+      "lang_code": "mni_Mtei",
+      "lang_name": "Manipuri (Meitei Mayek)"
+    },
+    {
+      "lang_code": "mzn_Latn",
+      "lang_name": "Mazanderani (Latin)"
+    },
+    {
+      "lang_code": "nbl_Latn",
+      "lang_name": "South Ndebele (Latin)"
+    },
+    {
+      "lang_code": "nch_Latn",
+      "lang_name": "Central Huasteca Nahuatl (Latin)"
+    },
+    {
+      "lang_code": "ngu_Latn",
+      "lang_name": "Guerrero Nahuatl (Latin)"
+    },
+    {
+      "lang_code": "nhg_Latn",
+      "lang_name": "Tetelcingo Nahuatl (Latin)"
+    },
+    {
+      "lang_code": "nhn_Latn",
+      "lang_name": "Central Nahuatl (Latin)"
+    },
+    {
+      "lang_code": "nij_Latn",
+      "lang_name": "Ngaju (Latin)"
+    },
+    {
+      "lang_code": "pfl_Latn",
+      "lang_name": "Pfaelzisch (Latin)"
+    },
+    {
+      "lang_code": "plt_Latn",
+      "lang_name": "Plateau Malagasy (Latin)"
+    },
+    {
+      "lang_code": "shn_Latn",
+      "lang_name": "Shan (Latin)"
+    },
+    {
+      "lang_code": "son_Latn",
+      "lang_name": "Songhai languages (Latin)"
+    },
+    {
+      "lang_code": "ssw_Kana",
+      "lang_name": "Swati (Katakana)"
+    },
+    {
+      "lang_code": "taq_Latn",
+      "lang_name": "Tamasheq (Latin)"
+    },
+    {
+      "lang_code": "toi_Latn",
+      "lang_name": "Tonga (Zambia) (Latin)"
+    },
+    {
+      "lang_code": "wal_Latn",
+      "lang_name": "Wolaytta (Latin)"
+    },
+    {
+      "lang_code": "yid_Latn",
+      "lang_name": "Yiddish (Latin)"
+    },
+    {
+      "lang_code": "azz_Latn",
+      "lang_name": "Highland Puebla Nahuatl (Latin)"
     }
   ],
   "3": [
@@ -8357,6 +8881,286 @@
     {
       "lang_code": "lat_Latn",
       "lang_name": "latin"
+    },
+    {
+      "lang_code": "aeb_Latn",
+      "lang_name": "Tunisian Arabic (Latin)"
+    },
+    {
+      "lang_code": "afr_Arab",
+      "lang_name": "Afrikaans (Arabic)"
+    },
+    {
+      "lang_code": "afr_Cyrl",
+      "lang_name": "Afrikaans (Cyrillic)"
+    },
+    {
+      "lang_code": "aka_Arab",
+      "lang_name": "Akan (Arabic)"
+    },
+    {
+      "lang_code": "aka_Cyrl",
+      "lang_name": "Akan (Cyrillic)"
+    },
+    {
+      "lang_code": "asm_Arab",
+      "lang_name": "Assamese (Arabic)"
+    },
+    {
+      "lang_code": "asm_Latn",
+      "lang_name": "Assamese (Latin)"
+    },
+    {
+      "lang_code": "azb_Latn",
+      "lang_name": "South Azerbaijani (Latin)"
+    },
+    {
+      "lang_code": "bal_Latn",
+      "lang_name": "Baluchi (Latin)"
+    },
+    {
+      "lang_code": "bam_Nkoo",
+      "lang_name": "Bambara (N'Ko)"
+    },
+    {
+      "lang_code": "bam_Telu",
+      "lang_name": "Bambara (Telugu)"
+    },
+    {
+      "lang_code": "ber_Latn",
+      "lang_name": "Berber (Latin)"
+    },
+    {
+      "lang_code": "bod_Ethi",
+      "lang_name": "Tibetan (Ethiopic)"
+    },
+    {
+      "lang_code": "bod_Latn",
+      "lang_name": "Tibetan (Latin)"
+    },
+    {
+      "lang_code": "bug_Beng",
+      "lang_name": "Buginese (Bengali)"
+    },
+    {
+      "lang_code": "bug_Cyrl",
+      "lang_name": "Buginese (Cyrillic)"
+    },
+    {
+      "lang_code": "bug_Hani",
+      "lang_name": "Buginese (Han)"
+    },
+    {
+      "lang_code": "bug_Latn",
+      "lang_name": "Buginese (Latin)"
+    },
+    {
+      "lang_code": "bul_Latn",
+      "lang_name": "Bulgarian (Latin)"
+    },
+    {
+      "lang_code": "cat_Cyrl",
+      "lang_name": "Catalan (Cyrillic)"
+    },
+    {
+      "lang_code": "cdo_Hani",
+      "lang_name": "Min Dong Chinese (Han)"
+    },
+    {
+      "lang_code": "ckb_Latn",
+      "lang_name": "Central Kurdish (Latin)"
+    },
+    {
+      "lang_code": "dje_Latn",
+      "lang_name": "Zarma (Latin)"
+    },
+    {
+      "lang_code": "ell_Latn",
+      "lang_name": "Modern Greek (1453-) (Latin)"
+    },
+    {
+      "lang_code": "fin_Arab",
+      "lang_name": "Finnish (Arabic)"
+    },
+    {
+      "lang_code": "fin_Armn",
+      "lang_name": "Finnish (Armenian)"
+    },
+    {
+      "lang_code": "fin_Cyrl",
+      "lang_name": "Finnish (Cyrillic)"
+    },
+    {
+      "lang_code": "fin_Deva",
+      "lang_name": "Finnish (Devanagari)"
+    },
+    {
+      "lang_code": "fin_Grek",
+      "lang_name": "Finnish (Greek)"
+    },
+    {
+      "lang_code": "fin_Hang",
+      "lang_name": "Finnish (Hangul)"
+    },
+    {
+      "lang_code": "fin_Hani",
+      "lang_name": "Finnish (Han)"
+    },
+    {
+      "lang_code": "fin_Hebr",
+      "lang_name": "Finnish (Hebrew)"
+    },
+    {
+      "lang_code": "fin_Kana",
+      "lang_name": "Finnish (Katakana)"
+    },
+    {
+      "lang_code": "fin_Taml",
+      "lang_name": "Finnish (Tamil)"
+    },
+    {
+      "lang_code": "grn_Cyrl",
+      "lang_name": "Guarani (Cyrillic)"
+    },
+    {
+      "lang_code": "heb_Latn",
+      "lang_name": "Hebrew (Latin)"
+    },
+    {
+      "lang_code": "hne_Deva",
+      "lang_name": "Chhattisgarhi (Devanagari)"
+    },
+    {
+      "lang_code": "hne_Latn",
+      "lang_name": "Chhattisgarhi (Latin)"
+    },
+    {
+      "lang_code": "hye_Cyrl",
+      "lang_name": "Armenian (Cyrillic)"
+    },
+    {
+      "lang_code": "hye_Latn",
+      "lang_name": "Armenian (Latin)"
+    },
+    {
+      "lang_code": "ilo_Hani",
+      "lang_name": "Iloko (Han)"
+    },
+    {
+      "lang_code": "kas_Deva",
+      "lang_name": "Kashmiri (Devanagari)"
+    },
+    {
+      "lang_code": "kau_Arab",
+      "lang_name": "Kanuri (Arabic)"
+    },
+    {
+      "lang_code": "kau_Hang",
+      "lang_name": "Kanuri (Hangul)"
+    },
+    {
+      "lang_code": "kau_Latn",
+      "lang_name": "Kanuri (Latin)"
+    },
+    {
+      "lang_code": "kaz_Latn",
+      "lang_name": "Kazakh (Latin)"
+    },
+    {
+      "lang_code": "khm_Latn",
+      "lang_name": "Central Khmer (Latin)"
+    },
+    {
+      "lang_code": "lua_Latn",
+      "lang_name": "Luba-Lulua (Latin)"
+    },
+    {
+      "lang_code": "lub_Latn",
+      "lang_name": "Luba-Katanga (Latin)"
+    },
+    {
+      "lang_code": "mad_Latn",
+      "lang_name": "Madurese (Latin)"
+    },
+    {
+      "lang_code": "mon_Cyrl",
+      "lang_name": "Mongolian (Cyrillic)"
+    },
+    {
+      "lang_code": "nor_Latn",
+      "lang_name": "Norwegian (Latin)"
+    },
+    {
+      "lang_code": "quw_Latn",
+      "lang_name": "Lambayeque Quechua (Latin)"
+    },
+    {
+      "lang_code": "quy_Latn",
+      "lang_name": "Ayacucho Quechua (Latin)"
+    },
+    {
+      "lang_code": "quz_Latn",
+      "lang_name": "Cusco Quechua (Latin)"
+    },
+    {
+      "lang_code": "sag_Cyrl",
+      "lang_name": "Sango (Cyrillic)"
+    },
+    {
+      "lang_code": "shi_Latn",
+      "lang_name": "Tachelhit (Latin)"
+    },
+    {
+      "lang_code": "sin_Latn",
+      "lang_name": "Sinhala (Latin)"
+    },
+    {
+      "lang_code": "sqi_Arab",
+      "lang_name": "Albanian (Arabic)"
+    },
+    {
+      "lang_code": "sqi_Grek",
+      "lang_name": "Albanian (Greek)"
+    },
+    {
+      "lang_code": "srp_Latn",
+      "lang_name": "Serbian (Latin)"
+    },
+    {
+      "lang_code": "tat_Latn",
+      "lang_name": "Tatar (Latin)"
+    },
+    {
+      "lang_code": "tgk_Latn",
+      "lang_name": "Tajik (Latin)"
+    },
+    {
+      "lang_code": "tir_Latn",
+      "lang_name": "Tigrinya (Latin)"
+    },
+    {
+      "lang_code": "tuk_Arab",
+      "lang_name": "Turkmen (Arabic)"
+    },
+    {
+      "lang_code": "umb_Cyrl",
+      "lang_name": "Umbundu (Cyrillic)"
+    },
+    {
+      "lang_code": "uig_Latn",
+      "lang_name": "Uighur (Latin)"
+    },
+    {
+      "lang_code": "zgh_Tfng",
+      "lang_name": "Standard Moroccan Tamazight (Tifinagh)"
+    },
+    {
+      "lang_code": "zha_Latn",
+      "lang_name": "Zhuang (Latin)"
+    },
+    {
+      "lang_code": "tzm_Tfng",
+      "lang_name": "Central Atlas Tamazight (Tifinagh)"
     }
   ],
   "4": [
@@ -8431,6 +9235,194 @@
     {
       "lang_code": "cat_Latn",
       "lang_name": "catalan"
+    },
+    {
+      "lang_code": "amh_Arab",
+      "lang_name": "Amharic (Arabic)"
+    },
+    {
+      "lang_code": "amh_Latn",
+      "lang_name": "Amharic (Latin)"
+    },
+    {
+      "lang_code": "arq_Arab",
+      "lang_name": "Algerian Arabic (Arabic)"
+    },
+    {
+      "lang_code": "arq_Latn",
+      "lang_name": "Algerian Arabic (Latin)"
+    },
+    {
+      "lang_code": "ary_Arab",
+      "lang_name": "Moroccan Arabic (Arabic)"
+    },
+    {
+      "lang_code": "ary_Latn",
+      "lang_name": "Moroccan Arabic (Latin)"
+    },
+    {
+      "lang_code": "aze_Cyrl",
+      "lang_name": "Azerbaijani (Cyrillic)"
+    },
+    {
+      "lang_code": "bho_Latn",
+      "lang_name": "Bhojpuri (Latin)"
+    },
+    {
+      "lang_code": "fas_Arab",
+      "lang_name": "Persian (Arabic)"
+    },
+    {
+      "lang_code": "fas_Latn",
+      "lang_name": "Persian (Latin)"
+    },
+    {
+      "lang_code": "ful_Adlm",
+      "lang_name": "Fulah (Adlam)"
+    },
+    {
+      "lang_code": "gan_Hani",
+      "lang_name": "Gan Chinese (Han)"
+    },
+    {
+      "lang_code": "guj_Cyrl",
+      "lang_name": "Gujarati (Cyrillic)"
+    },
+    {
+      "lang_code": "guj_Latn",
+      "lang_name": "Gujarati (Latin)"
+    },
+    {
+      "lang_code": "hak_Latn",
+      "lang_name": "Hakka Chinese (Latin)"
+    },
+    {
+      "lang_code": "hau_Cyrl",
+      "lang_name": "Hausa (Cyrillic)"
+    },
+    {
+      "lang_code": "kan_Latn",
+      "lang_name": "Kannada (Latin)"
+    },
+    {
+      "lang_code": "kor_Latn",
+      "lang_name": "Korean (Latin)"
+    },
+    {
+      "lang_code": "kur_Arab",
+      "lang_name": "Kurdish (Arabic)"
+    },
+    {
+      "lang_code": "mai_Latn",
+      "lang_name": "Maithili (Latin)"
+    },
+    {
+      "lang_code": "mal_Hebr",
+      "lang_name": "Malayalam (Hebrew)"
+    },
+    {
+      "lang_code": "mal_Latn",
+      "lang_name": "Malayalam (Latin)"
+    },
+    {
+      "lang_code": "mya_Latn",
+      "lang_name": "Burmese (Latin)"
+    },
+    {
+      "lang_code": "nan_Hani",
+      "lang_name": "Min Nan Chinese (Han)"
+    },
+    {
+      "lang_code": "nep_Beng",
+      "lang_name": "Nepali (Bengali)"
+    },
+    {
+      "lang_code": "nep_Latn",
+      "lang_name": "Nepali (Latin)"
+    },
+    {
+      "lang_code": "nep_Mymr",
+      "lang_name": "Nepali (Myanmar)"
+    },
+    {
+      "lang_code": "nld_Deva",
+      "lang_name": "Dutch (Devanagari)"
+    },
+    {
+      "lang_code": "nqo_Hebr",
+      "lang_name": "N'Ko (Hebrew)"
+    },
+    {
+      "lang_code": "ori_Cyrl",
+      "lang_name": "Oriya (Cyrillic)"
+    },
+    {
+      "lang_code": "ori_Latn",
+      "lang_name": "Oriya (Latin)"
+    },
+    {
+      "lang_code": "pan_Deva",
+      "lang_name": "Panjabi (Devanagari)"
+    },
+    {
+      "lang_code": "pan_Latn",
+      "lang_name": "Panjabi (Latin)"
+    },
+    {
+      "lang_code": "pus_Hebr",
+      "lang_name": "Pushto (Hebrew)"
+    },
+    {
+      "lang_code": "pus_Latn",
+      "lang_name": "Pushto (Latin)"
+    },
+    {
+      "lang_code": "skr_Arab",
+      "lang_name": "Saraiki (Arabic)"
+    },
+    {
+      "lang_code": "skr_Latn",
+      "lang_name": "Saraiki (Latin)"
+    },
+    {
+      "lang_code": "snd_Latn",
+      "lang_name": "Sindhi (Latin)"
+    },
+    {
+      "lang_code": "ukr_Latn",
+      "lang_name": "Ukrainian (Latin)"
+    },
+    {
+      "lang_code": "uzb_Cyrl",
+      "lang_name": "Uzbek (Cyrillic)"
+    },
+    {
+      "lang_code": "uzb_Hani",
+      "lang_name": "Uzbek (Han)"
+    },
+    {
+      "lang_code": "uzb_Latn",
+      "lang_name": "Uzbek (Latin)"
+    },
+    {
+      "lang_code": "wuu_Hani",
+      "lang_name": "Wu Chinese (Han)"
+    },
+    {
+      "lang_code": "wuu_Latn",
+      "lang_name": "Wu Chinese (Latin)"
+    },
+    {
+      "lang_code": "tha_Latn",
+      "lang_name": "Thai (Latin)"
+    },
+    {
+      "lang_code": "yue_Hani",
+      "lang_name": "Yue Chinese (Han)"
+    },
+    {
+      "lang_code": "yue_Latn",
+      "lang_name": "Yue Chinese (Latin)"
     }
   ],
   "5": [
@@ -8461,6 +9453,166 @@
     {
       "lang_code": "cmn_Hans",
       "lang_name": "mandarin"
+    },
+    {
+      "lang_code": "ara_Latn",
+      "lang_name": "Arabic (Latin)"
+    },
+    {
+      "lang_code": "arz_Beng",
+      "lang_name": "Egyptian Arabic (Bengali)"
+    },
+    {
+      "lang_code": "ben_Arab",
+      "lang_name": "Bengali (Arabic)"
+    },
+    {
+      "lang_code": "ben_Latn",
+      "lang_name": "Bengali (Latin)"
+    },
+    {
+      "lang_code": "deu_Hebr",
+      "lang_name": "German (Hebrew)"
+    },
+    {
+      "lang_code": "eng_Arab",
+      "lang_name": "English (Arabic)"
+    },
+    {
+      "lang_code": "eng_Armn",
+      "lang_name": "English (Armenian)"
+    },
+    {
+      "lang_code": "eng_Beng",
+      "lang_name": "English (Bengali)"
+    },
+    {
+      "lang_code": "eng_Cyrl",
+      "lang_name": "English (Cyrillic)"
+    },
+    {
+      "lang_code": "eng_Deva",
+      "lang_name": "English (Devanagari)"
+    },
+    {
+      "lang_code": "eng_Grek",
+      "lang_name": "English (Greek)"
+    },
+    {
+      "lang_code": "eng_Hang",
+      "lang_name": "English (Hangul)"
+    },
+    {
+      "lang_code": "eng_Hani",
+      "lang_name": "English (Han)"
+    },
+    {
+      "lang_code": "eng_Hebr",
+      "lang_name": "English (Hebrew)"
+    },
+    {
+      "lang_code": "eng_Kana",
+      "lang_name": "English (Katakana)"
+    },
+    {
+      "lang_code": "eng_Taml",
+      "lang_name": "English (Tamil)"
+    },
+    {
+      "lang_code": "eng_Thai",
+      "lang_name": "English (Thai)"
+    },
+    {
+      "lang_code": "fil_Latn",
+      "lang_name": "Filipino (Latin)"
+    },
+    {
+      "lang_code": "hin_Grek",
+      "lang_name": "Hindi (Greek)"
+    },
+    {
+      "lang_code": "hin_Latn",
+      "lang_name": "Hindi (Latin)"
+    },
+    {
+      "lang_code": "jpn_Cyrl",
+      "lang_name": "Japanese (Cyrillic)"
+    },
+    {
+      "lang_code": "jpn_Hani",
+      "lang_name": "Japanese (Han)"
+    },
+    {
+      "lang_code": "jpn_Hira",
+      "lang_name": "Japanese (Hiragana)"
+    },
+    {
+      "lang_code": "jpn_Kana",
+      "lang_name": "Japanese (Katakana)"
+    },
+    {
+      "lang_code": "jpn_Latn",
+      "lang_name": "Japanese (Latin)"
+    },
+    {
+      "lang_code": "jpn_Mymr",
+      "lang_name": "Japanese (Myanmar)"
+    },
+    {
+      "lang_code": "jpn_Zyyy",
+      "lang_name": "Japanese (Common)"
+    },
+    {
+      "lang_code": "lah_Arab",
+      "lang_name": "Lahnda (Arabic)"
+    },
+    {
+      "lang_code": "mar_Latn",
+      "lang_name": "Marathi (Latin)"
+    },
+    {
+      "lang_code": "pnb_Latn",
+      "lang_name": "Western Panjabi (Latin)"
+    },
+    {
+      "lang_code": "rus_Latn",
+      "lang_name": "Russian (Latin)"
+    },
+    {
+      "lang_code": "tam_Latn",
+      "lang_name": "Tamil (Latin)"
+    },
+    {
+      "lang_code": "tel_Latn",
+      "lang_name": "Telugu (Latin)"
+    },
+    {
+      "lang_code": "urd_Geor",
+      "lang_name": "Urdu (Georgian)"
+    },
+    {
+      "lang_code": "urd_Latn",
+      "lang_name": "Urdu (Latin)"
+    },
+    {
+      "lang_code": "urd_Zyyy",
+      "lang_name": "Urdu (Common)"
+    },
+    {
+      "lang_code": "zho_Hani",
+      "lang_name": "Chinese (Han)"
+    },
+    {
+      "lang_code": "zho_Latn",
+      "lang_name": "Chinese (Latin)"
+    },
+    {
+      "lang_code": "jav_Cyrl",
+      "lang_name": "Javanese (Cyrillic)"
+    },
+    {
+      "lang_code": "jav_Hira",
+      "lang_name": "Javanese (Hiragana)"
     }
   ]
 }
